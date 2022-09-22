@@ -1,0 +1,266 @@
+@charset "utf-8";
+form {
+    width: 80%;
+    font-size: 0.8em;
+}
+form.login {
+    margin:auto;
+    margin-bottom: 150px;
+}
+form a{
+    color: #ce2e3c;
+    font-weight: bold;
+}
+form a:hover{
+    text-decoration: underline;
+}
+form button.enviar:hover{
+    text-decoration: underline;
+    cursor: pointer; /*colocar o link como mão*/
+}
+form button.enviar{
+    font-size: 1.7em;
+    max-width: 30%;
+    max-height: 10%;
+    height: 0;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+form#fusuario{
+    margin-left: 0;
+    margin: auto;
+}
+input ,textarea{
+    font-family:'Lato',sans-serif;
+    font-weight:normal;
+    font-size:13pt;
+    background-color:rgba(255,255,255,.8);
+    margin-bottom: 2%;
+}
+input:hover, textarea:hover {
+    background-color:#dddddd;
+}
+legend {
+    color:#888888 !important;
+    font-weight:bold;
+    font-size:12pt;
+    font-family:sans-serif;
+}
+fieldset { 
+    border-color:#cecece;
+    margin:20px auto auto auto;
+}
+fieldset#sexo {
+    width:80%;
+}
+fieldset#endereco {
+    background: url("../_imagens/icone-endereco.png") no-repeat 20% 20%;
+}
+fieldset#pedido {
+    background: url("../_imagens/icone-pagamento.png") no-repeat 20% 20%;
+}
+label {
+    font-weight: bold;
+    margin-right: 1%;
+}
+input {
+    border: 1px solid #CCC;
+    box-shadow: inset 2px 2px 2px #EEE;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+/*tabela insc*/   
+table#tabelaInsc{
+    border:1px solid #606060;
+    border-spacing: 0;
+    margin: auto;
+}
+table#tabelaInsc td{
+    border: 1px solid #606060;
+}
+table#tabelaspec{
+    border:1px solid #606060;
+    border-spacing: 0px;
+    width:70%;
+    padding: 0;
+    font-size: 0.93em;
+}
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 0;
+    text-align:left;
+    vertical-align:middle;
+}
+table#tabelaspec td.ce {
+color:#ffffff;
+background-color:#606060;
+vertical-align:top;
+font-weight: bold;
+}
+table#tabelaspec td.cd {
+    background-color:#cecece;
+}
+table#tabelaspec caption {
+    color:#888888;
+    font-size: 0.2em;
+    font-weight:bold;
+}
+
+table#tabelaspec caption span{
+    display:block;
+    float:right;
+    color:#000000;
+    font-size: 0.2em;
+    margin-top: 10px;
+}
+/*tabela root*/
+table#tabelaroot{
+    border:1px solid #606060;
+    border-spacing: 0;
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+}
+table#tabelaroot td{
+    font-size: 0.5em;
+    border: 1px solid #606060;
+    padding: 0px;
+    margin-left: -2%;
+    text-align: center;
+    vertical-align:middle;
+}
+table#tabelaroot td.ce {
+    background-color:#eeeeee;
+    vertical-align:top;
+    font-weight: bold;
+    text-align: left;
+}
+table#tabelaroot td.cc {
+    background-color:#eeeeee;
+    vertical-align:top;
+    font-weight: bold;
+    text-align: center;
+}
+table#tabelaroot td.cd {
+    background-color:#eeeeee;
+    vertical-align:top;
+    font-weight: bold;
+    text-align: right;
+}
+table#tabelaroot td.valor {
+    color: orangered;
+    font-weight: bold;
+}
+table#tabelaroot caption {
+    color:#888888;
+    font-size: 1.3em;
+    font-weight:bold;
+}
+table#tabelaroot caption span{
+    display:block;
+    float:right;
+    color:#140400;
+    font-size:8pt;
+    margin-top: 10px;
+}
+/*menu*/
+div.texto ul.formmenu {
+    list-style: none;
+}
+div.texto ul.consulta, ol.consulta{
+    font-size: 0.85em;
+}
+div.texto ul.consulta , ol.consulta{
+    padding: 0;
+}
+@media screen and (min-width: 768px){
+    table#tabelaroot{
+        margin-left: auto;
+        padding: 0px;
+    }
+    table#tabelaroot td{
+        font-size: 1em;
+        border: 1px solid #606060;
+        padding: 2px;
+        margin-left: -5%;
+        text-align: center;
+        vertical-align:middle;
+    }
+    form.login {
+        margin:auto;
+        margin-bottom: 100px;
+    }
+}
+@media screen and (min-width: 960px){
+    form.formmenu {
+       font-size: 1.2em;
+    }
+    table#tabelaspec{
+        width: 75%;
+    }
+    table#tabelaInsc td{
+        font-size: 1.4em;
+        border: 1px solid #606060;
+        padding: 10px;
+        text-align: center;
+        vertical-align:middle;
+    }
+    div.texto ul.formmenu, ol.formmenu{
+        margin-bottom: 5%;
+    }
+    div.texto ul.formmenu li , ol.formmenu li{
+        float: left;
+        margin-left: 10%;
+        font-size: 1.1em;
+    }
+    h2.tituloform {
+        margin-left: 40%;
+    }
+    table#tabelaspec{
+        margin: auto;
+    }
+    table#tabelaspec td{
+        font-size: 1.2em;
+        padding: 1.1%;
+    }
+    table#tabelaspec caption {
+        font-size: 1.3em;
+    }
+    form.login {
+        margin:auto;
+        margin-bottom: 300px;
+    }
+}
+@media screen and (min-width: 1280px){
+    form {
+        margin:auto;
+    }
+    form.login {
+        margin:auto;
+        margin-bottom: auto;
+    }
+    div.texto ul.formmenu, ol.formmenu{
+        margin-bottom: 5%;
+    }
+    div.texto ul.formmenu li , ol.formmenu li{
+        float: left;
+        margin-left: 10%;
+        font-size: 1.2em;
+    }
+
+    table#tabelaroot{
+        border:1px solid #606060;
+        border-spacing: 0;
+        margin-left: -10%;
+        width: 95%;
+        margin: auto;
+    }
+    table#tabelaroot td{
+        font-size: 1em;
+        border: 1px solid #606060;
+        padding: 10px;
+        text-align: center;
+        vertical-align:middle;
+    }    
+}

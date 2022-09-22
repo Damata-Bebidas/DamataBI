@@ -1,0 +1,54 @@
+{
+                "agencia": "18900",
+                "conta": "005804407",
+                "documento": {
+                    "numero": 422003824055,
+                    "numeroCliente": "5486",
+                    "especie": "09",
+                    "dataVencimento": "2022-09-21",
+                    "valor": 185.36,
+                    "diasDevolucao" : 90,
+                    "codigoMoeda": 0,
+                    "quantidadeDiasProtesto": 0,
+                    "multa": {
+                        "dataJuros": "2022-09-21",
+                        "taxaJuros": 9.90,
+                        "dataMulta": "2022-09-21",
+                        "taxaMulta": 2.00
+                    },
+                    "campoLivre": "",
+                    "fidc": "0",
+                    "danfe": "361716",
+                    "pagador": {
+                        "nome": "APARECIDA DAS GRACAS DE SOUZA PEREIRA 42",
+                        "tipoPessoa": "J",
+                        "numeroDocumento": "12979874000111",
+                        "endereco": {
+                            "logradouro": "JOAO DE ALMEIDA CRUZ, 79",
+                            "bairro": "ESTEVES",
+                            "cidade": "LEOPOLDINA",
+                            "uf": "MG",
+                            "cep": "36700000"
+                        }
+                    },
+                    "beneficiario": {
+                        "nome": "DamataBebidas",
+                        "tipoPessoa": "J",
+                        "email": "",
+                        "numeroDocumento": "00952948000147",
+                        "endereco": {
+                            "logradouro": "Rua. Rua Gentil Pacheco de Melo, 25",
+                            "bairro": "Fatima",
+                            "cidade": "Leopoldina",
+                            "uf": "MG",
+                            "cep": "36700000"
+                        }
+                    },
+                    "mensagens": [
+                        {
+                            "posicao": "1",
+                            "descricao": "Apos o vencimento, Multa de R$3,71 e Juros dia de R$0,61"
+                        }
+                    ]
+                }
+            }

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+div#tv-radio{
+    width:80%;
+    height:580px;
+    margin:auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+audio#musica {
+    display:block;
+    position: relative;
+    left:575px;
+    top:500px;
+    width:30%;
+}
+video#filme {
+    display:block;
+    position:relative;
+    left:90px;
+    top:70px;
+    width:50%;
+}
+span#destaque{
+    background: yellow;
+}
+span#avisoInscricao{
+    background: yellow;
+    color: orangered;
+    font-weight: bold;
+    font-size: 9pt;
+}
+a {
+    color:orangered;
+}
+img#home{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+}
+span#inscricao a{
+    margin-top: 30px;
+    margin-left: 10%;
+    color:brown;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background: yellow;
+}
+span#inscricao a:hover{
+    text-decoration: underline;
+}
+h5#usuario{
+    position: absolute;
+    top:170px;
+    left: 1100px;
+}
+video#filme02{
+    width:40%;
+}
+.direita{
+    text-align:right;
+}
+.center{
+    text-align: center;
+}
+a {
+    color:#606060;
+    text-decoration:none;
+    -webkit-transition: all .5s ease-in;
+}
+.api{
+    display: none;
+}
+.null{
+    display: none;
+}
+.frame{
+    width: 100%;
+    height: 100%;
+}
+li {
+    padding: 0.2%;
+}
+ul#listnone {
+    list-style: none;
+}
+ul#listnone li {
+    padding: 0.2%;
+}
+h5#formsaneamento{
+    padding: 0.5%;
+}
+h5#formsaneamento b{
+    font-weight: bolder;
+}
+hr.linha{
+    border: 1px solid orangered;
+    border-width: 1px;
+    margin-left: 10%;
+    width: 70%;
+}
+hr.form{
+    border: 1px solid orangered;
+    border-width: 1px;
+    margin-left: 0%;
+}

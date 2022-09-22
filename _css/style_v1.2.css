@@ -1,0 +1,560 @@
+@charset "UTF-8";
+
+/* Created on : 26/01/2019, 19:26:18
+   Author     : welington*/
+/*======Reset======*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+}
+
+body {
+    padding: 0px;
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 3px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*======Container======*/
+.container {
+    width: 100%;
+    float: left;
+    padding: 1% 2%;
+    text-align: center;
+}
+
+/*======BG Color======*/
+.bg-black {
+    background-color: #140400;
+}
+
+.bg-white {
+    background-color: whitesmoke;
+}
+
+.bg-gradiente {
+    background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+
+.bg-gradiente-roda {
+    background: linear-gradient(to right, #040BC9, #03078A, #02077D, #020563, #01033D);
+}
+
+/*======Helpers======*/
+.radius {
+    border-radius: 7px;
+}
+
+/*======Cabeçalho======*/
+/* Create a sticky/fixed navbar */
+#navbar {
+    overflow: hidden;
+    background: linear-gradient(to right, #040BC9, #03078A, #02077D, #020563, #01033D);
+    padding: 15px 10px;
+    /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s;
+    /* Adds a transition effect when the padding is decreased */
+    position: sticky;
+    /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0;
+    /* At the top */
+    z-index: 99;
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+    background-image: url(../_imagens/LogoHd.png);
+    background-size: 216px 60px;
+    padding: 30px 108px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* Links on mouse-over */
+#navbar a:hover {
+    color: rgb(0, 155, 194);
+    transition: 2.4ms;
+}
+
+/* Style the active/current link */
+#navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Display some links to the right */
+#navbar-right {
+    float: right;
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+        /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #navbar-right {
+        float: none;
+    }
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*======Banner======*/
+.banner {
+    background: linear-gradient(to left, #040BC9, #03078A, #02077D, #020563, #01033D);
+}
+
+.title {
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 2.0em;
+    color: whitesmoke;
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.buttons i {
+    float: right;
+}
+
+.btn {
+    width: 50%;
+    font-size: 0.5em;
+    text-align: left;
+    cursor: pointer;
+    padding: 5%;
+}
+
+.btn-cadastrar {
+    color: #140400;
+}
+
+.btn-cursos {
+    color: whitesmoke;
+    margin-top: 2%;
+}
+
+/*======Servicos======*/
+.servico {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.servico img {
+    border-radius: 7px 7px 0 0;
+}
+
+.fotoponto {
+    border-radius: 2px 2px 0 0;
+    height: 150px;
+    width: 80px;
+    margin-right: 0%;
+    margin-bottom: 0.5%;
+    float: right;
+}
+
+.inner {
+    padding: 7%;
+}
+
+.inner a {
+    font-size: 1em;
+    color: #140400;
+    font-weight: 700;
+}
+
+.inner h4 {
+    font-size: 1.2em;
+    color: #140400;
+    margin-top: 2%;
+}
+
+.inner p {
+    margin-top: 6%;
+    color: #140400;
+    line-height: 1.5em;
+}
+
+.newsletter h2 {
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.newsletter h3 {
+    color: whitesmoke;
+}
+
+.newsletter form {
+    margin-top: 2%;
+}
+
+.newsletter input {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    padding: 5%;
+}
+
+.newsletter button {
+    width: 100%;
+    color: #140400;
+    padding: 5%;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.rodape {
+    background-color: gray;
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3%;
+}
+
+/*tira o espaço do último elemento*/
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: whitesmoke;
+}
+
+.copyright {
+    margin-top: 2%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.moldura {
+    width: 80%;
+    height: 300px;
+    background-color: lightyellow;
+    transition: background-image 4s;
+    -webkit-transition: all 1s ease-in;
+    display: none;
+}
+
+.voltar {
+    margin: auto;
+    background-color: #888888;
+    color: whitesmoke;
+    display: none;
+}
+
+.ir {
+    background-color: #888888;
+    color: whitesmoke;
+    display: none;
+}
+
+.pri {
+    text-transform: capitalize;
+}
+
+span.valorpago {
+    color: green;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+span.valorgratis {
+    color: blue;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.pago {
+    font-size: 1em;
+    color: green;
+    font-weight: bolder;
+    background: yellowgreen;
+}
+
+.pendente {
+    font-size: 1em;
+    color: orangered;
+    background: wheat;
+    font-weight: bolder;
+}
+
+.gratis {
+    color: blue;
+    background: lightskyblue;
+    font-weight: bolder;
+}
+
+/*======Mobile First======*/
+@media screen and (min-width: 480px) {
+    .logo {
+        width: 270px;
+        height: 75px;
+        background: url(../_imagens/LogoHd.png) center center/269px no-repeat;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .servico {
+        width: 48%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .servico:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .newsletter h2 {
+        font-size: 2em;
+    }
+
+    .newsletter h3 {
+        font-size: 1.5em;
+    }
+
+    .newsletter input {
+        width: 69%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+
+    .newsletter button {
+        width: 30%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .moldura {
+        display: none;
+    }
+
+    .voltar {
+        display: none;
+    }
+
+    .ir {
+        display: none;
+    }
+
+    .fotoponto {
+        border-radius: 2px 2px 0 0;
+        height: 200px;
+        width: 150px;
+        margin-right: 5%;
+        margin-bottom: 0.5%;
+        float: right;
+    }
+}
+
+/*Medium Devices - Tablets and Desktops*/
+@media screen and (min-width: 960px) {
+    .title {
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+
+    .buttons {
+        width: 30%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .title h2 {
+        font-size: 3em;
+    }
+
+    .title h3 {
+        font-size: 2em;
+    }
+
+    .servico {
+        width: 31%;
+    }
+
+    .servico:nth-child(2) {
+        margin-right: 2%;
+    }
+
+    .servico:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .newsletter input {
+        width: 40%;
+        float: none;
+    }
+
+    .newsletter button {
+        widows: 20%;
+        float: none;
+    }
+}
+
+/*Medium Devices - Tablets and Desktops*/
+@media screen and (min-width: 1280px) {
+    .btn {
+        font-size: 1.2em;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 20px;
+        width: 700px;
+        line-height: 30px;
+        height: 4px;
+        float: right;
+        background: linear-gradient(to left, #040ABE, #04099E, #030789, #030783, #020678);
+        display: block !important;
+        position: relative;
+        margin-right: 30px;
+    }
+
+    .menu li {
+        padding: 0px;
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .menu li a {
+        color: whitesmoke;
+        font-size: 1.5em;
+        padding: 13px;
+    }
+
+    .menu li a:hover {
+        border-radius: 50px;
+        background-color: #060ee45e;
+        color: #FFD700;
+        transition: background-color .15s;
+    }
+
+    nav.menu div ul li ul {
+        margin: auto;
+        margin-top: 4, 5px;
+        text-align: center;
+    }
+
+    nav.menu div ul li ul li a {
+        margin-top: -1px;
+        padding: 10px;
+    }
+
+    nav.menu div ul li:hover ul {
+        display: block;
+    }
+
+    .moldura {
+        margin-left: -30px;
+        width: 104.2%;
+        height: 500px;
+        display: block;
+    }
+
+    .voltar {
+        font-size: 2em;
+        display: block;
+        float: left;
+        margin-left: 49%;
+        margin-right: 1%;
+    }
+
+    .ir {
+        font-size: 2em;
+        display: block;
+    }
+
+    .fotoponto {
+        border-radius: 2px 2px 0 0;
+        height: 250px;
+        width: 180px;
+        margin-right: 10%;
+        margin-bottom: 0.5%;
+        float: right;
+    }
+}

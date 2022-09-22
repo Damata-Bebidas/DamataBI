@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conn>
+    <database>
+        <web>
+            <dsn>bXlzcWw6aG9zdD1teXNxbC5ob3N0aW5nZXIuY29tLmJyO2RibmFtZT11OTgwNjU4MzUxX2RhbWF0YQ==</dsn>
+            <username>dTk4MDY1ODM1MV9yb290</username>
+            <passwd>QFdlbDE5ODg=</passwd>
+        </web>
+        <localhost>
+            <dsn>bXlzcWw6aG9zdD1sb2NhbGhvc3Q7ZGJuYW1lPWRhbWF0YQ==</dsn>
+            <username>cm9vdA==</username>
+            <passwd></passwd>
+        </localhost>
+    </database>
+</conn>
